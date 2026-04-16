@@ -55,9 +55,11 @@ export default function Navbar() {
             <button
               onClick={() => setMenuOpen(true)}
               aria-label="Open menu"
-              className="md:hidden"
+              className="flex h-10 w-10 flex-col items-center justify-center gap-[5px] rounded-full border border-neutral-700 bg-neutral-900/60 backdrop-blur-sm transition-colors hover:border-neutral-500 md:hidden"
             >
-              <PillIcon label="Menu" />
+              <span className="h-[2px] w-4 rounded-full bg-white" />
+              <span className="h-[2px] w-4 rounded-full bg-white" />
+              <span className="h-[2px] w-4 rounded-full bg-white" />
             </button>
           </div>
         </div>
