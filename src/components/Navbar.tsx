@@ -41,14 +41,16 @@ export default function Navbar() {
             </span>
           </Link>
 
-          {/* Center: Nav (desktop only) */}
-          <nav className="hidden items-center gap-2 justify-self-center md:flex">
-            {navLinks.map((link) => (
-              <Link key={link.href} href={link.href}>
-                <PillIcon label={link.label} />
-              </Link>
-            ))}
-          </nav>
+          {/* Center: Nav wrapper — keeps grid column even when nav hidden */}
+          <div className="justify-self-center">
+            <nav className="hidden items-center gap-2 md:flex">
+              {navLinks.map((link) => (
+                <Link key={link.href} href={link.href}>
+                  <PillIcon label={link.label} />
+                </Link>
+              ))}
+            </nav>
+          </div>
 
           {/* Right: Mobile menu button */}
           <div className="justify-self-end">
