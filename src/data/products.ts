@@ -7,6 +7,7 @@ export interface Product {
   category: string;
   description: string;
   details: string[];
+  limited?: boolean;
 }
 
 export const products: Product[] = [
@@ -45,72 +46,38 @@ export const products: Product[] = [
     ],
   },
   {
-    slug: "shaker-white-logo",
-    name: "STRYK Shaker — White Logo",
-    subtitle: "White · Full octagon logo",
+    slug: "shaker-white",
+    name: "STRYK Shaker — White",
+    subtitle: "First Drop · Limited Edition",
     price: 13,
-    image: "/images/shaker1.jpg",
+    image: "/images/shakerwhite.jpg",
     category: "Shakers",
+    limited: true,
     description:
-      "The STRYK White Logo Shaker features the full octagon panther emblem. Leak-proof, BPA-free, and built to last.",
+      "First drop limited edition. The white STRYK Shaker — only available while stocks last. Each drop gets its own exclusive design that never comes back.",
     details: [
+      "First drop — limited edition",
       "700 ml capacity",
       "White body",
-      "Full octagon logo design",
       "Leak-proof lid",
       "BPA-free plastic",
       "Mixing ball included",
     ],
   },
   {
-    slug: "shaker-white-minimal",
-    name: "STRYK Shaker — White Minimal",
-    subtitle: "White · Minimalist logo",
+    slug: "shaker-black",
+    name: "STRYK Shaker — Black",
+    subtitle: "First Drop · Limited Edition",
     price: 13,
-    image: "/images/shaker2.jpg",
+    image: "/images/shakerblack.jpg",
     category: "Shakers",
+    limited: true,
     description:
-      "Clean and minimal. The white STRYK shaker with a sleek minimalist panther silhouette. Same quality, sleeker look.",
+      "First drop limited edition. The black STRYK Shaker — only available while stocks last. Each drop gets its own exclusive design that never comes back.",
     details: [
-      "700 ml capacity",
-      "White body",
-      "Minimalist panther design",
-      "Leak-proof lid",
-      "BPA-free plastic",
-      "Mixing ball included",
-    ],
-  },
-  {
-    slug: "shaker-black-logo",
-    name: "STRYK Shaker — Black Logo",
-    subtitle: "Black · Full octagon logo",
-    price: 13,
-    image: "/images/shaker3.png",
-    category: "Shakers",
-    description:
-      "The STRYK Black Logo Shaker features the full octagon panther emblem on a stealth black body. Leak-proof, BPA-free, and built to last.",
-    details: [
+      "First drop — limited edition",
       "700 ml capacity",
       "Black body",
-      "Full octagon logo design",
-      "Leak-proof lid",
-      "BPA-free plastic",
-      "Mixing ball included",
-    ],
-  },
-  {
-    slug: "shaker-black-text",
-    name: "STRYK Shaker — Black Text",
-    subtitle: "Black · STRYK letters only",
-    price: 13,
-    image: "/images/shaker4.png",
-    category: "Shakers",
-    description:
-      "Murdered out. The STRYK Black Text Shaker keeps it simple with bold STRYK lettering on an all-black body.",
-    details: [
-      "700 ml capacity",
-      "Black body",
-      "STRYK text-only design",
       "Leak-proof lid",
       "BPA-free plastic",
       "Mixing ball included",
