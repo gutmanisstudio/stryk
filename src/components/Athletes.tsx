@@ -6,6 +6,17 @@ import PillIcon from "./PillIcon";
 
 const athletes = [
   {
+    name: "Ruslans Rudenko",
+    title: "MMA / Pankration",
+    achievements: [
+      "MMA National Champion",
+      "Bazara 0 Amateur Champion",
+      "MMA National Team",
+    ],
+    image: "/images/ruslan1.jpg",
+    instagram: "russllzx",
+  },
+  {
     name: "Ričards Hauberts",
     title: "MMA / Pankration",
     achievements: [
@@ -57,7 +68,7 @@ export default function Athletes() {
           </p>
         </FadeIn>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {/* Real athletes */}
           {athletes.map((athlete, i) => {
             const Wrapper = athlete.instagram ? "a" : "div";
@@ -130,7 +141,7 @@ export default function Athletes() {
           })}
 
           {/* Placeholder slots for upcoming athletes */}
-          {Array.from({ length: Math.max(0, 3 - athletes.length) }).map(
+          {Array.from({ length: Math.max(0, 4 - athletes.length) }).map(
             (_, i) => (
               <FadeIn key={`placeholder-${i}`} delay={(athletes.length + i) * 0.1}>
                 <div className="group relative aspect-[3/4] overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-900/40">
